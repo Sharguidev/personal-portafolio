@@ -46,7 +46,7 @@ export const Btn_3DContactaKnow = () => {
 
         <div className=" d-flex justify-content-center gap-3">
             <button type="button" className="btn-contact mt-4">
-                <div className="button-top">Contact Me</div>
+                <div className="button-top">Know More!</div>
                 <div className="button-bottom"></div>
                 <div className="button-base"></div>
             </button>
@@ -56,5 +56,13 @@ export const Btn_3DContactaKnow = () => {
                 <div className="button-base"></div>
             </button>
         </div>
+    );
+}
+
+export const Btn_page_project = () => {
+    return (
+        /* From Uiverse.io by levxyca */
+        <button className="btn-uid">Button</button>
+
     );
 }
