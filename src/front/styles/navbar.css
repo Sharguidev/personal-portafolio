@@ -1,0 +1,9 @@
+.navd-link {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.navd-link:hover {
+    color: #4b4b4b;
+}
