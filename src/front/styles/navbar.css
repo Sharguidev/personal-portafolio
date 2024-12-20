@@ -1,9 +1,11 @@
 .navd-link {
     text-decoration: none;
-    color: #000000;
+    color: #fcf7f7;
     font-weight: bold;
 }
 
 .navd-link:hover {
     color: #4b4b4b;
 }
+
+/* From Uiverse.io by kennyotsu-monochromia */

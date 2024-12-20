@@ -9,7 +9,7 @@ export const Navbar = () => {
 			<div className="container">
 				<Link to="/" className="navbar-brand navd-link" >
 					<span>
-						<img src="https://github.com/Sharguidev/personal-portafolio/blob/main/src/front/img/Sharguidev_p.png?raw=true" style={{ width: "150px" }}></img>
+						Sharguidev
 					</span>
 				</Link>
 				<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="/navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">

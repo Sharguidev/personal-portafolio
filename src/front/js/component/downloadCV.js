@@ -39,3 +39,22 @@ export const DownloadCV = () => {
 
     );
 }
+
+export const Btn_3DContactaKnow = () => {
+    return (
+        /* From Uiverse.io by njesenberger */
+
+        <div className=" d-flex justify-content-center gap-3">
+            <button type="button" className="btn-contact mt-4">
+                <div className="button-top">Contact Me</div>
+                <div className="button-bottom"></div>
+                <div className="button-base"></div>
+            </button>
+            <button type="button" className="btn-contact mt-4">
+                <div className="button-top">Contact Me</div>
+                <div className="button-bottom"></div>
+                <div className="button-base"></div>
+            </button>
+        </div>
+    );
+}
