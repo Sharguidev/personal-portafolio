@@ -7,7 +7,7 @@ export const ContactForm = () => {
     return (
 
 
-        <div className="mt-5" id="contact-me">
+        <div className="mt-5 mb-5" id="contact-me">
             <h1 className="mt-5">Contact Me</h1>
             <div class="form-container mt-5">
                 <div class="form">
