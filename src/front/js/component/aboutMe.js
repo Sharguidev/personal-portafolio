@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 // import "./../../styles/aboutMe.css";
 import { Btn_3DContactaKnow } from "./downloadCV";
 
@@ -17,10 +17,10 @@ export const AboutMe = () => {
                         Recently, graduated from the <a href="https://www.4geeksacademy.com" className="link-aboutme">4Geeks Academy</a> FullStack Bootcamp.
                     </p>
                     <p className="text-center">
-                        Here you can see more about my <Link to="/skills" className="link-aboutme">Skills</Link> and <Link to="/projects" className="link-aboutme">Projects</Link>
+                        Here you can see more about my <Link to="skills" className="link-aboutme">Skills</Link> and <Link to="projects" className="link-aboutme">Projects</Link>
                     </p>
                     <div className="">
-                        <Btn_3DContactaKnow />
+                        <button className="get-in-touch">Get in Touch!</button>
 
                     </div>
                 </div>
