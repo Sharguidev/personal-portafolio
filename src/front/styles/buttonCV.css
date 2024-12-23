@@ -196,3 +196,66 @@ button:active {
   box-shadow: none;
   transform: translate(3px, 3px);
 }
+
+/* Codepen button Skills */
+
+.codepen-button {
+  text-decoration: none;
+  background-color: #000000;
+  padding: 8px 20px;
+  border-radius: 10px;
+  border-bottom: 5px solid transparent;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease;
+}
+
+.codepen-button:hover {
+  text-decoration: none;
+  filter: brightness(110%);
+  color: rgb(255, 255, 255);
+  border-bottom: 5px solid red;
+  box-shadow: -9px 10px 61px 9px rgba(250, 0, 0, 0.51);
+  -webkit-box-shadow: -9px 10px 61px 9px rgba(250, 0, 0, 0.51);
+  -moz-box-shadow: -9px 10px 61px 9px rgba(250, 0, 0, 0.51);
+  cursor: pointer;
+
+}
+
+.codepen-button:active {
+  text-decoration: none;
+  filter: brightness(90%);
+  transform: translateY(2px);
+  color: red;
+  border-bottom: 5px solid red;
+  cursor: pointer
+}
+
+/* See more Projects Button */
+.see-more {
+  margin-top: 70px;
+  background-color: #000000;
+  font-size: 18px;
+  padding: 8px 40px;
+  border-radius: 10px;
+  border: none;
+  border-bottom: 5px solid transparent;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease;
+
+}
+
+.see-more .link-seemore {
+  text-decoration: none;
+  color: white;
+}
+
+.see-more:hover {
+
+  filter: brightness(110%);
+  color: rgb(255, 255, 255);
+  border-bottom: 5px solid red;
+  box-shadow: -9px 10px 61px 9px rgba(250, 0, 0, 0.51);
+  -webkit-box-shadow: -9px 10px 61px 9px rgba(250, 0, 0, 0.51);
+  -moz-box-shadow: -9px 10px 61px 9px rgba(250, 0, 0, 0.51);
+  cursor: pointer;
+}

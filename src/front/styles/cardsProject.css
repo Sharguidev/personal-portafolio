@@ -4,9 +4,10 @@
     width: 330px;
     min-height: 370px;
     border-radius: 20px;
-    background: #212121;
-    box-shadow: 5px 5px 8px #1b1b1b,
-        -5px -5px 8px #272727;
+    background: #000000;
+    box-shadow: -9px 5px 61px -10px rgba(250, 0, 0, 0.51);
+    -webkit-box-shadow: -9px 5px 61px -10px rgba(250, 0, 0, 0.51);
+    -moz-box-shadow: -9px 5px 61px -10px rgba(250, 0, 0, 0.51);
     transition: 0.4s;
 }
 
@@ -48,5 +49,5 @@
 }
 
 .card-projects {
-    margin-top: 100px;
+    margin-top: 80px;
 }

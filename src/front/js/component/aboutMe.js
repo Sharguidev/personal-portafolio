@@ -14,7 +14,7 @@ export const AboutMe = () => {
 
                     </p>
                     <p className="text-center">
-                        Recently, graduated from the <Link to="https://www.4geeksacademy.com" className="link-aboutme">4Geeks Academy</Link> FullStack Bootcamp.
+                        Recently, graduated from the <a href="https://www.4geeksacademy.com" className="link-aboutme">4Geeks Academy</a> FullStack Bootcamp.
                     </p>
                     <p className="text-center">
                         Here you can see more about my <Link to="/skills" className="link-aboutme">Skills</Link> and <Link to="/projects" className="link-aboutme">Projects</Link>
