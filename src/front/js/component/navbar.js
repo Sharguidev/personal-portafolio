@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import { DownloadCV } from "./downloadCV";
 import "./../../styles/navbar.css";
 
@@ -17,11 +17,11 @@ export const Navbar = () => {
 				</button>
 				<div className="collapse navbar-collapse" id="navbarNavAltMarkup">
 					<div className="navbar-nav ms-auto gap-2 navd-link">
-						<Link to="/" className="nav-link active navd-link" aria-current="page">About Me</Link>
-						<Link to="/" className="nav-link navd-link" >Projects</Link>
+						<Link to="about-me" className="nav-link active navd-link" aria-current="page">About Me</Link>
+						<Link to="projects" className="nav-link navd-link" >Projects</Link>
 
-						<Link to="/" className="nav-link navd-link" >Skills</Link>
-						<Link to="/" className="nav-link navd-link" >Contact Me</Link>
+						<Link to="skills" className="nav-link navd-link" >Skills</Link>
+						<Link to="contact-me" className="nav-link navd-link" >Contact Me</Link>
 						<DownloadCV />
 					</div>
 				</div>

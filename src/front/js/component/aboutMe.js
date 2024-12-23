@@ -5,7 +5,7 @@ import { Btn_3DContactaKnow } from "./downloadCV";
 
 export const AboutMe = () => {
     return (
-        <div className="container-about">
+        <div className="container-about" id="about-me">
             <div className="row">
                 <div className="col-12">
                     <img className="rounded-circle mt-5" src="https://github.com/Sharguidev/personal-portafolio/blob/main/src/front/img/fotoCV.jpeg?raw=true" style={{ width: "200px", height: "200px" }}></img>

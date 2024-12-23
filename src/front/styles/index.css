@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+
 body {
     font-family: "Nunito Sans", serif;
     color: rgb(255, 248, 248);
@@ -15,11 +17,10 @@ body {
 }
 
 
-
 .link-aboutme {
     text-decoration: none;
     color: #000000;
-    background-color: #778da9;
+    background-color: red;
     border-radius: 5px;
     padding: 5px 5px;
     font-weight: bold;
@@ -28,8 +29,8 @@ body {
 .link-aboutme:hover {
     padding: 5px 5px;
     text-decoration: none;
-    color: #fffefe;
-    background-color: #080752;
+    color: red;
+    background-color: #000000;
     border-radius: 5px;
 
 }

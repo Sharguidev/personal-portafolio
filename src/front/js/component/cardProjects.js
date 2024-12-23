@@ -8,7 +8,7 @@ const CardProjects = () => {
 
         <div>
 
-            <div id="projects" className="card mx-5 my-2" style={{ marginTop: "100px" }}>
+            <div className="card mx-5 my-2" style={{ marginTop: "100px" }}>
                 <div className="card-image"></div>
                 <p className="card-title">Card title</p>
                 <p className="card-body">

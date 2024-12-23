@@ -6,7 +6,7 @@ import "./../../styles/buttonCV.css"
 
 export const Skills = () => {
     return (
-        <div>
+        <div id="skills">
             <h1 className="mt-5" >Skills</h1>
             <p className="text-skills">Here you can see my skills</p>
             <div className="d-flex justify-content-center gap-4">
