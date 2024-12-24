@@ -17,15 +17,13 @@ export const Home = () => {
 		<div className="text-center mt-5">
 
 			<AboutMe />
-			{/* <hr style={{ height: "2px", backgroundColor: "white", marginTop: "50px" }} /> */}
-			<div className="justify-content-center" style={{ marginTop: "150px" }} id="projects">
+
+			<div className="justify-content-center projects" style={{ marginTop: "150px" }} id="projects">
 				<p>My Projects</p>
 				<h1>My Web developed projects</h1> <br />
 				<p>You can see my projects here, click in Know More! to get more information about each project</p>
 			</div>
-			<div className="d-flex justify-content-center card-projects" >
-				<CardProjects />
-				<CardProjects />
+			<div className="d-flex card-projects" >
 				<CardProjects />
 			</div>
 			<div>

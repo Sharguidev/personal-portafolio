@@ -20,6 +20,7 @@ export const Skills = () => {
                     <a className="codepen-button"><span>CSS</span></a>
                     <a className="codepen-button"><span>React</span></a>
                     <a className="codepen-button"><span>Flask API</span></a>
+                    <br />
                     <a className="codepen-button"><span>Python</span></a>
                     <a className="codepen-button"><span>Postgress SQL</span></a>
                     <a className="codepen-button"><span>Bootstrap</span></a>
@@ -27,6 +28,7 @@ export const Skills = () => {
                     <a className="codepen-button"><span>Github</span></a>
                     <a className="codepen-button"><span>PHP (Backend DB)</span></a>
                 </div>
+
             </div>
         </div>
     );

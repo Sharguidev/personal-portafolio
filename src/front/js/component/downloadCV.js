@@ -62,7 +62,7 @@ export const Btn_3DContactaKnow = () => {
 export const Btn_page_project = () => {
     return (
         /* From Uiverse.io by levxyca */
-        <button className="btn-uid">Button</button>
+        <button className="btn-uid">Know More!</button>
 
     );
 }

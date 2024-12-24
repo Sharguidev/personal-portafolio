@@ -1,3 +1,5 @@
+
+
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
@@ -13,6 +15,33 @@ const getState = ({ getStore, getActions, setStore }) => {
 					background: "white",
 					initial: "white"
 				}
+			],
+
+			projects: [
+				{
+					id: 1,
+					title: "Roomies",
+					description: "This was the final project developed in collaboration with other classmates in 4geeksAcademy."
+
+				},
+				{
+					id: 2,
+					title: "Star Wars API",
+					description: "This was made with Python and Flask API, it should be capable of insert, delete or update data in the database."
+				},
+				{
+					id: 3,
+					title: "Authentication System",
+					description: "This is a Login System using hash password, and JWT token. Capable to start a new session and logout."
+				},
+				{
+					id: 4,
+					title: "Landing Page with React Js",
+					description: "This was made with React JS, Bootstrap and CSS. simple project to practice React"
+				}
+
+
+
 			]
 		},
 		actions: {
@@ -22,14 +51,14 @@ const getState = ({ getStore, getActions, setStore }) => {
 			},
 
 			getMessage: async () => {
-				try{
+				try {
 					// fetching data from the backend
 					const resp = await fetch(process.env.BACKEND_URL + "/api/hello")
 					const data = await resp.json()
 					setStore({ message: data.message })
 					// don't forget to return something, that is how the async resolves
 					return data;
-				}catch(error){
+				} catch (error) {
 					console.log("Error loading message from backend", error)
 				}
 			},
