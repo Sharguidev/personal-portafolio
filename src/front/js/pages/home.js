@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 import rigoImageUrl from "../../img/rigo-baby.jpg";
 import "../../styles/home.css";
-import CardProjects from "../component/cardProjects.js";
+import CardProjects from "../component/cardProjects.jsx";
 import { Skills } from "../component/skills.jsx";
 import { ContactForm } from "../component/contactForm.jsx";
 
@@ -23,7 +23,7 @@ export const Home = () => {
 				<h1>My Web developed projects</h1> <br />
 				<p>You can see my projects here, click in Know More! to get more information about each project</p>
 			</div>
-			<div className="d-flex card-projects" >
+			<div className="container-fluid justify-content-center card-projects" >
 				<CardProjects />
 			</div>
 			<div>

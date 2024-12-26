@@ -5,8 +5,8 @@ import "./../../styles/footer.css";
 export function Footer() {
 	return (
 
-		<div className="container-footer mt-5">
-			<footer className="pie-pagina gap-5">
+		<div className="container-footer mt-5 w-100">
+			<footer className="pie-pagina ">
 				<div className="grupo-1">
 					<div className="box">
 						<figure className="imagen">
@@ -23,7 +23,7 @@ export function Footer() {
 					<div className="box mt-5">
 						<h2 >Follow Me</h2>
 						<div className="red-social">
-							<a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+							<a href="https://github.com/Sharguidev" target="_blank" rel="noopener noreferrer">
 								<i className="fa-brands fa-github"></i>
 							</a>
 							<a href="https://www.linkedin.com/in/guillermo-obando-0978b41aa/" target="_blank" rel="noopener noreferrer">

@@ -1,16 +1,16 @@
 .card {
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 20px;
-    width: 370px;
+    width: 600px;
+    max-width: 700px;
     height: 550px;
-    min-height: 550px;
-    max-height: 550px;
     border-radius: 20px;
     background: #000000;
     box-shadow: -9px 5px 61px -10px rgba(250, 0, 0, 0.51);
     -webkit-box-shadow: -9px 5px 61px -10px rgba(250, 0, 0, 0.51);
     -moz-box-shadow: -9px 5px 61px -10px rgba(250, 0, 0, 0.51);
     transition: 0.4s;
+
 }
 
 .card:hover {
