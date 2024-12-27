@@ -12,6 +12,7 @@ import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer.jsx";
 import Projects from "./pages/projects.jsx";
 import Login from "./pages/login.jsx";
+import SingleProject from "./pages/singleProject.jsx";
 
 //create your first component
 const Layout = () => {
@@ -32,6 +33,7 @@ const Layout = () => {
                         <Route element={<Single />} path="/single/:theid" />
                         <Route element={<Projects />} path="/projects" />
                         <Route element={<Login />} path="/login" />
+                        <Route element={<SingleProject />} path="/singleProject" />
                         <Route element={<h1>Not found!</h1>} />
                     </Routes>
                     <Footer />
