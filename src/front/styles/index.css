@@ -40,3 +40,41 @@ body {
 .projects {
     font-size: 22px;
 }
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+
+    /* Borde blanco semitransparente */
+}
+
+.navbar-toggler-icon {
+    background-image: none;
+    /* Elimina el icono predeterminado */
+    display: inline-block;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    /* Cambia el color de las líneas */
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    /* Mismo color para las líneas superior e inferior */
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler-icon::before {
+    top: -10px;
+}
+
+.navbar-toggler-icon::after {
+    top: 10px;
+}

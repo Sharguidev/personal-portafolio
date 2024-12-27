@@ -26,8 +26,8 @@ export const Home = () => {
 			<div className="container-fluid justify-content-center card-projects" >
 				<CardProjects />
 			</div>
-			<div>
-				<button className="see-more"><Link to="/projects" className="link-seemore">See More</Link></button>
+			<div className="mt-5">
+				<Link to="/projects" className="see-more ">See More</Link>
 			</div>
 			<div style={{ marginTop: "150px" }}>
 				<Skills />

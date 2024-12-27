@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+
 // import "./../../styles/aboutMe.css";
 import { Btn_3DContactaKnow } from "./downloadCV";
 
@@ -20,7 +21,10 @@ export const AboutMe = () => {
                         Here you can see more about my <Link to="skills" className="link-aboutme">Skills</Link> and <Link to="projects" className="link-aboutme">Projects</Link>
                     </p>
                     <div className="">
-                        <button className="get-in-touch">Get in Touch!</button>
+                        <button className="get-in-touch">
+                            <Link to="contact-me" className="text-decoration-none text-white">Get in Touch!
+                            </Link>
+                        </button>
 
                     </div>
                 </div>

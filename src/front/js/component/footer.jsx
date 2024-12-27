@@ -5,7 +5,8 @@ import "./../../styles/footer.css";
 export function Footer() {
 	return (
 
-		<div className="container-footer mt-5 w-100">
+
+		<div className="container-footer mt-5">
 			<footer className="pie-pagina ">
 				<div className="grupo-1">
 					<div className="box">
@@ -20,7 +21,7 @@ export function Footer() {
 						<p>
 							I'm a Catholic guy, passionated for Technology music and the most important the Mass</p>
 					</div>
-					<div className="box mt-5">
+					<div className="box mt-5 text-center">
 						<h2 >Follow Me</h2>
 						<div className="red-social">
 							<a href="https://github.com/Sharguidev" target="_blank" rel="noopener noreferrer">
@@ -39,6 +40,7 @@ export function Footer() {
 				</div>
 			</footer>
 		</div>
+
 
 	);
 }

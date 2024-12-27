@@ -144,7 +144,7 @@ button:active {
 
 /* See more Projects Button */
 .see-more {
-  margin-top: 70px;
+
   background-color: #000000;
   font-size: 18px;
   padding: 8px 40px;
@@ -153,13 +153,11 @@ button:active {
   border-bottom: 5px solid transparent;
   color: rgb(255, 255, 255);
   transition: all 0.3s ease;
-
-}
-
-.see-more .link-seemore {
   text-decoration: none;
   color: white;
+
 }
+
 
 .see-more:hover {
 
