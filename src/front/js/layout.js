@@ -13,6 +13,7 @@ import { Footer } from "./component/footer.jsx";
 import Projects from "./pages/projects.jsx";
 import Login from "./pages/login.jsx";
 import SingleProject from "./pages/singleProject.jsx";
+import { UploadProject } from "./pages/uploadProject.jsx";
 
 //create your first component
 const Layout = () => {
@@ -23,7 +24,7 @@ const Layout = () => {
     if (!process.env.BACKEND_URL || process.env.BACKEND_URL == "") return <BackendURL />;
 
     return (
-        <div>
+        <div className="app">
             <BrowserRouter basename={basename}>
                 <ScrollToTop>
                     <Navbar />
@@ -34,6 +35,7 @@ const Layout = () => {
                         <Route element={<Projects />} path="/projects" />
                         <Route element={<Login />} path="/login" />
                         <Route element={<SingleProject />} path="/singleProject" />
+                        <Route element={<UploadProject />} path="/uploadProject" />
                         <Route element={<h1>Not found!</h1>} />
                     </Routes>
                     <Footer />

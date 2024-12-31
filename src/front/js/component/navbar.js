@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 import { Link as LinkRouter } from "react-router-dom"
-import { DownloadCV } from "./downloadCV";
+import { DownloadCV } from "./downloadCV.jsx";
 import "./../../styles/navbar.css";
 
 export const Navbar = () => {

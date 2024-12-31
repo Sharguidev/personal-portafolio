@@ -1,0 +1,60 @@
+.container-login {
+    background-color: black;
+    width: 36rem;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: -2px -4px 39px 0px rgba(255, 0, 0, 0.75);
+    -webkit-box-shadow: -2px -4px 39px 0px rgba(255, 0, 0, 0.75);
+    -moz-box-shadow: -2px -4px 39px 0px rgba(255, 0, 0, 0.75);
+}
+
+.container-login .input-login {
+    background-color: black;
+    color: red;
+    border: none;
+    border-bottom: 2px solid red;
+    border-left: 4px solid red;
+
+
+}
+
+.container-login .input-login:focus {
+    border-top: 2px solid red;
+    border-right: 4px solid red;
+    background-color: black;
+    color: red;
+}
+
+.container-login .input-login:active {
+    border: none;
+    border-top: 2px solid red;
+    border-right: 4px solid red;
+    background-color: black;
+    color: red;
+    outline: none;
+}
+
+
+.btn-login {
+
+    background-color: #1b1a1a;
+    font-size: 18px;
+    padding: 8px 40px;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 5px solid transparent;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-login:hover {
+    filter: brightness(110%);
+    color: rgb(255, 255, 255);
+    border-bottom: 5px solid red;
+    box-shadow: -9px 10px 61px 9px rgba(250, 0, 0, 0.51);
+    -webkit-box-shadow: -9px 10px 61px 9px rgba(250, 0, 0, 0.51);
+    -moz-box-shadow: -9px 10px 61px 9px rgba(250, 0, 0, 0.51);
+    cursor: pointer;
+}

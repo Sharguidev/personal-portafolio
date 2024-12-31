@@ -15,7 +15,7 @@ const Projects = () => {
 
             </div>
             <div>
-                <button className="see-more"><Link to="/" className="link-seemore">Go Back</Link></button>
+                <Link to="/" className="see-more">Go Back</Link>
             </div>
         </div>
     );

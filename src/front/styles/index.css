@@ -11,7 +11,15 @@ body {
             transparent);
     background-size: 60px 60px;
     background-position: -5px -5px;
+    scroll-behavior: smooth;
     /* 0.577=tan(30deg)*/
+}
+
+/* To set the footer to the bottom + margin-top: auto in footer css */
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .container-about {
@@ -33,7 +41,13 @@ body {
     color: red;
     background-color: #000000;
     border-radius: 5px;
+    cursor: pointer;
 
+}
+
+textarea {
+    resize: none;
+    field-sizing: content;
 }
 
 

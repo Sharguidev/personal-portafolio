@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "./../../styles/cardsProject.css";
-import { Btn_page_project } from "./downloadCV";
+import { Btn_page_project } from "./downloadCV.jsx";
 import { Context } from "../store/appContext";
 
 
@@ -36,13 +36,14 @@ export default function CardProjects() {
 const ProjectsItems = ({ project }) => {
     return (
 
-        <div className="card" >
-            <div className="card-image"></div>
-            <p className="card-title">{project.title}</p>
-            <p className="card-body">
-                {project.description}
-            </p>
-            <Btn_page_project />
+
+        <div className="card" style={{ width: "18rem" }}>
+            <img src="..." className="card-img-top" alt="..." />
+            <div className="card-body">
+                <h5 className="card-title">{project.title}</h5>
+                <p className="card-text">{project.description}</p>
+                <a href="#" className="btn-know-more">See More</a>
+            </div>
         </div>
 
 

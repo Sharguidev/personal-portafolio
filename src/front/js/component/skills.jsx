@@ -11,7 +11,7 @@ export const Skills = () => {
             <div id="skills" >
 
                 <h1 className="mt-5">Skills</h1>
-                <p className="text-skills">Here you can see my skills</p>
+                <p className="text-skills" style={{ fontSize: "24px" }}>Here you can see my skills</p>
 
 
                 <div className="skills-grid">

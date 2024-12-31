@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 
 // import "./../../styles/aboutMe.css";
-import { Btn_3DContactaKnow } from "./downloadCV";
+import { Btn_3DContactaKnow } from "./downloadCV.jsx";
 
 export const AboutMe = () => {
     return (

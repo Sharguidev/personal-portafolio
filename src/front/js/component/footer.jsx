@@ -6,7 +6,7 @@ export function Footer() {
 	return (
 
 
-		<div className="container-footer mt-5">
+		<div className="container-footer mt-auto">
 			<footer className="pie-pagina ">
 				<div className="grupo-1">
 					<div className="box">
