@@ -15,21 +15,30 @@ export const Skills = () => {
 
 
                 <div className="skills-grid">
-                    <a class="codepen-button"><span>HTML</span></a>
-                    <a className="codepen-button"><span>JavaScript</span></a>
-                    <a className="codepen-button"><span>CSS</span></a>
-                    <a className="codepen-button"><span>React</span></a>
-                    <a className="codepen-button"><span>Flask API</span></a>
-                    <br />
-                    <a className="codepen-button"><span>Python</span></a>
-                    <a className="codepen-button"><span>Postgress SQL</span></a>
-                    <a className="codepen-button"><span>Bootstrap</span></a>
-                    <a className="codepen-button"><span>Git</span></a>
-                    <a className="codepen-button"><span>Github</span></a>
-                    <a className="codepen-button"><span>PHP (Backend DB)</span></a>
+                    {[
+                        { icon: "fa-html5", name: "HTML" },
+                        { icon: "fa-css3", name: "CSS" },
+                        { icon: "fa-js", name: "JavaScript" },
+                        { icon: "fa-react", name: "React" },
+                        { icon: "fa-php", name: "(Backend DB) PHP" },
+                        { icon: "fa-python", name: "Python" },
+                        { icon: "fa-solid fa-pepper-hot", name: "Flask" },
+                        { icon: "fa-solid fa-database", name: "PostgreSQL" },
+                        { icon: "fa-docker", name: "Docker" },
+                        { icon: "fa-git-alt", name: "Git" },
+                        { icon: "fa-github", name: "Github" },
+                        { icon: "fa-linux", name: "Linux" },
+
+                    ].map(skill => (
+                        <a className="codepen-button " key={skill.name}>
+                            <span><i className={`fa-brands ${skill.icon}`}></i></span><br />
+                            <span>{skill.name}</span>
+                        </a>
+                    ))}
                 </div>
 
             </div>
         </div>
     );
 };
+

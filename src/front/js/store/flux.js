@@ -1,8 +1,11 @@
+import toast from "react-hot-toast";
 
 
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
+			user: null,
+			token: localStorage.getItem("token") || null,
 			message: null,
 			demo: [
 				{
@@ -75,6 +78,42 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 				//reset the global store
 				setStore({ demo: demo });
+			},
+
+			login: async (email, password) => {
+				try {
+					const resp = await fetch(process.env.BACKEND_URL + "api/login", {
+						method: "POST",
+						headers: {
+							"Content-Type": "application/json"
+						},
+						body: JSON.stringify({
+							email: email,
+							password: password
+						})
+					})
+					const data = await resp.json()
+					localStorage.setItem("token", data.token)
+
+					setStore({
+						token: data.token,
+						user: data.user
+					})
+					return true
+
+				} catch (error) {
+					console.log(error)
+
+				}
+			},
+
+			logout: () => {
+				localStorage.removeItem("token")
+				setStore({
+					token: null,
+					user: null
+				});
+				toast.success("Logout Success🎉")
 			}
 		}
 	};
