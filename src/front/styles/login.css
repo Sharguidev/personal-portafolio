@@ -1,4 +1,5 @@
 .container-login {
+
     background-color: black;
     width: 36rem;
     padding: 30px;
@@ -57,4 +58,12 @@
     -webkit-box-shadow: -9px 10px 61px 9px rgba(250, 0, 0, 0.51);
     -moz-box-shadow: -9px 10px 61px 9px rgba(250, 0, 0, 0.51);
     cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+    .container-login {
+        width: 90%;
+    }
 }

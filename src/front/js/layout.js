@@ -14,6 +14,7 @@ import Projects from "./pages/projects.jsx";
 import Login from "./pages/login.jsx";
 import SingleProject from "./pages/singleProject.jsx";
 import { UploadProject } from "./pages/uploadProject.jsx";
+import { Toaster } from "react-hot-toast";
 
 //create your first component
 const Layout = () => {
@@ -40,6 +41,7 @@ const Layout = () => {
                     </Routes>
                     <Footer />
                 </ScrollToTop>
+                <Toaster />
             </BrowserRouter>
         </div>
     );

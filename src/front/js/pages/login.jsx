@@ -31,7 +31,7 @@ const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
 
     return (
-        <div className="container-login mx-auto my-auto">
+        <div className="container-login mx-auto mb-5 mt-5">
             <h1 className="text-center my-4">Let's Rock</h1>
             <div className="form-floating mb-3">
                 <input
@@ -41,7 +41,7 @@ const Login = () => {
                     placeholder="name@example.com"
                     onChange={(e) => setUser({ ...user, email: e.target.value })}
                 />
-                <label for="floatingInput" className="">
+                <label htmlFor="floatingInput" className="">
                     Email address
                 </label>
             </div>
@@ -53,12 +53,12 @@ const Login = () => {
                     placeholder="Password"
                     onChange={(e) => setUser({ ...user, password: e.target.value })}
                 />
-                <label for="floatingPassword">Password</label>
+                <label htmlFor="floatingPassword">Password</label>
                 <div id="toggle" onClick={() => setShowPassword(!showPassword)}>
                     {showPassword ? (
-                        <i class="fa-solid fa-eye-slash"></i>
+                        <i className="fa-solid fa-eye-slash"></i>
                     ) : (
-                        <i class="fa-solid fa-eye"></i>
+                        <i className="fa-solid fa-eye"></i>
                     )}
                 </div>
             </div>

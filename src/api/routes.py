@@ -1,8 +1,12 @@
 """
 This module takes care of starting the API Server, Loading the DB and Adding the endpoints
 """
+
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 from flask import Flask, request, jsonify, url_for, Blueprint
-from api.models import db, User
+from api.models import db, User, GetInTouch
 from api.utils import generate_sitemap, APIException
 from flask_cors import CORS
 from flask_jwt_extended import jwt_required, create_access_token, get_jwt_identity
@@ -49,3 +53,71 @@ def login():
             }), 200
     else:
         return jsonify({"error": "email or password are incorrect"}), 400
+
+
+
+@api.route('/getintouch', methods=['POST'])
+def getintouch():
+    try:
+       body = request.get_json()
+
+       if body is None:
+           return jsonify({"error": "Body is required"}), 400
+       
+       required_fields = ["name", "email", "message"]
+       for field in required_fields:
+           if field not in body:
+               return jsonify({"error": f"{field} is required"}), 400
+
+       new_getintouch = GetInTouch(
+           name=body["name"],
+           email=body["email"],
+           message=body["message"]
+       )
+
+       db.session.add(new_getintouch)
+       db.session.commit()
+
+       employer = GetInTouch.query.filter_by(email=body["email"]).first()
+
+       if employer is None:
+           return jsonify({"error": "Email not found"}), 404
+
+       #Config send email
+
+       sender_email = employer.email
+       receiver_email = "guillermoj.obando@gmail.com"
+       receiver_password = "vnxkuunjchvhealc"
+
+       subject = f"Nuevo Mensaje de {body['name']}"
+       message_content = f"""
+       Hola {employer.name}
+       
+
+       Correo del empleador: {body['email']}
+       {body['message']}
+       """
+
+       msg = MIMEMultipart()
+       msg["From"] = sender_email
+       msg["To"] = receiver_email
+       msg["Subject"] = subject
+       msg.attach(MIMEText(message_content, "plain"))
+
+       try:
+
+        server = smtplib.SMTP("smtp.gmail.com", 587)
+        server.starttls()
+        server.login(receiver_email, receiver_password)
+        server.sendmail(sender_email, receiver_email, msg.as_string())
+        server.quit()
+
+
+       except Exception as e:
+        return jsonify({"error": str(e)}), 500
+       
+       return jsonify({"message": "Message sent successfully"}), 200
+
+
+    except Exception as e:
+       return jsonify({"error": str(e)}), 500

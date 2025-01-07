@@ -114,7 +114,36 @@ const getState = ({ getStore, getActions, setStore }) => {
 					user: null
 				});
 				toast.success("Logout Success🎉")
+			},
+
+			getInTouch: async (name, email, message) => {
+				try {
+					const resp = await fetch(process.env.BACKEND_URL + "api/getintouch", {
+						method: "POST",
+						headers: {
+							"Content-Type": "application/json",
+							"Authorization": "Bearer"
+						},
+						body: JSON.stringify({
+							name: name,
+							email: email,
+							message: message
+						})
+					});
+
+					if (resp.ok) {
+						const data = await resp.json();
+						toast.success("Message sent successfully! 🎉")
+						return data;
+					} else {
+						toast.error("Error sending message! 🙅🏾‍♂️")
+					}
+				} catch (error) {
+					console.log("Error enviando el mensaje: ", error)
+					toast.error("Error sending message! 🙅🏾‍♂️")
+				}
 			}
+
 		}
 	};
 };
