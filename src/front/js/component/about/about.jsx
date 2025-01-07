@@ -13,7 +13,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className="col-md-4">
-                        <img src="..." className="img-fluid rounded-start" alt="..." />
+                        <img src="https://github.com/Sharguidev/personal-portafolio/blob/main/src/front/img/foto_portadev.png?raw=true" className="img-fluid rounded-start" style={{ width: "500px" }} />
                     </div>
                 </div>
             </div>
