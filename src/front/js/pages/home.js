@@ -9,6 +9,7 @@ import { ContactForm } from "../component/contactForm.jsx";
 
 
 import { AboutMe } from "../component/aboutMe";
+import About from "../component/about/about.jsx";
 
 export const Home = () => {
 	const { store, actions } = useContext(Context);
@@ -16,7 +17,7 @@ export const Home = () => {
 	return (
 		<div className="text-center mt-5">
 
-			<AboutMe />
+			<About />
 
 			<div className="justify-content-center projects" style={{ marginTop: "150px" }} id="projects">
 				<p>My Projects</p>

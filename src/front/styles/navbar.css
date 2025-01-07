@@ -1,6 +1,11 @@
+nav {
+    background-color: #669bbc;
+    color: #003049;
+}
+
 .navd-link {
     text-decoration: none;
-    color: #fcf7f7;
+    color: #003049;
     font-weight: bold;
 }
 
@@ -9,7 +14,7 @@
 }
 
 .container {
-    font-size: 22px;
+    font-size: 16px;
 }
 
 

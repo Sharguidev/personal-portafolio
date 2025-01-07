@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 
 const BtnUploadFiles = () => {
     return (
-        <input placeholder="Upload Images" type="file" className="input upload-box" id="upload"
+        <input placeholder="Upload Images" type="file" className="input upload-box" id="upload" multiple
             onChange={(event) => {
                 const file = event.target.files;
 

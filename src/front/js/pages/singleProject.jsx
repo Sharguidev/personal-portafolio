@@ -8,7 +8,7 @@ const SingleProject = () => {
         <div>
             <h1 className=" text-center my-5">Project Information</h1>
             <CorrouselProject />
-            <div className="container gap-4 text-center mt-5">
+            <div className="container-fluid gap-4 text-center mt-5">
                 <div className="row">
                     <h3>What was the problem?</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam iusto possimus pariatur quasi tempore explicabo debitis reiciendis aspernatur cum ducimus? Necessitatibus perferendis cum blanditiis laborum quaerat eos voluptates tempora similique.</p>
@@ -19,8 +19,10 @@ const SingleProject = () => {
                         <p style={{ textAlign: "justify", fontSize: "20px" }}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti dignissimos laboriosam, esse commodi quisquam <br /> totam ad obcaecati perspiciatis iusto aut? Ea autem pariatur error, inventore quam corrupti minima sapiente modi.</p>
                     </div>
                     <div className="col-6">
-                        <h3 className="my-5">Technologies Used</h3>
-                        <p>Python, JavaScript, HTML, CSS</p>
+                        <div className="card-tech bg-black">
+                            <h3 className="my-5">Technologies Used</h3>
+                            <p>Python, JavaScript, HTML, CSS</p>
+                        </div>
                     </div>
                 </div>
                 <div className="row mt-5">
