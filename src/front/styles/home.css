@@ -5,3 +5,15 @@
     one more css for each page that will contain the selected used 
     on that page only (the ones not reused in other pages).
 */
+
+.projects p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #eae2b7;
+}
+
+.projects h1 {
+    font-size: 40px;
+    font-weight: 700;
+
+}

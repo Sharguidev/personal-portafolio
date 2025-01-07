@@ -2,12 +2,13 @@
     margin-top: 20px;
     padding: 10px;
     max-width: 700px;
-    height: 550px;
+    height: 350px;
     border-radius: 20px;
-    background: #f0e8e8;
-    box-shadow: -9px 5px 61px -10px rgba(250, 0, 0, 0.51);
-    -webkit-box-shadow: -9px 5px 61px -10px rgba(250, 0, 0, 0.51);
-    -moz-box-shadow: -9px 5px 61px -10px rgba(250, 0, 0, 0.51);
+    background: #171717;
+    box-shadow: -9px 5px 61px -10px #001d3d;
+    -webkit-box-shadow: -9px 5px 61px -10px #001d3d;
+    -webkit-box-shadow: -9px 5px 61px -10px 001d3d;
+    -moz-box-shadow: -9px 5px 61px -10px #001d3d;
     transition: 0.4s;
 
 }

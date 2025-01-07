@@ -21,7 +21,7 @@ export const Home = () => {
 
 			<div className="justify-content-center projects" style={{ marginTop: "150px" }} id="projects">
 				<p>My Projects</p>
-				<h1>My Web developed projects</h1> <br />
+				<h1>My Web developed projects</h1>
 				<p>You can see my projects here, click in Know More! to get more information about each project</p>
 			</div>
 			<div className="container-fluid justify-content-center card-projects" >

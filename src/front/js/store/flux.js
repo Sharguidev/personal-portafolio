@@ -35,7 +35,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				{
 					id: 3,
 					title: "Authentication System",
-					description: "This is a Login System using hash password, and JWT token. Capable to start a new session and logout."
+					description: "This is a Login System  JWT token. Capable to start a new session and logout."
 				},
 				{
 					id: 4,

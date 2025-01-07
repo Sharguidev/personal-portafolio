@@ -1,12 +1,8 @@
-nav {
-    background-color: #669bbc;
-    color: #003049;
-}
-
 .navd-link {
     text-decoration: none;
-    color: #003049;
+    color: #f4f1f1;
     font-weight: bold;
+    scroll-behavior: smooth;
 }
 
 .navd-link:hover {

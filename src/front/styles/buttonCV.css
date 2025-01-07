@@ -164,10 +164,10 @@ button:active {
   text-decoration: none;
   filter: brightness(110%);
   color: rgb(255, 255, 255);
-  border-bottom: 5px solid red;
-  box-shadow: -9px 10px 61px 9px rgba(250, 0, 0, 0.51);
-  -webkit-box-shadow: -9px 10px 61px 9px rgba(250, 0, 0, 0.51);
-  -moz-box-shadow: -9px 10px 61px 9px rgba(250, 0, 0, 0.51);
+  border-bottom: 5px solid #003049;
+  box-shadow: -9px 10px 61px 9px #003049;
+  -webkit-box-shadow: -9px 10px 61px 9px #003049;
+  -moz-box-shadow: -9px 10px 61px 9px #003049;
   cursor: pointer;
 
 }
@@ -202,16 +202,16 @@ button:active {
 
   filter: brightness(110%);
   color: rgb(255, 255, 255);
-  border-bottom: 5px solid red;
-  box-shadow: -9px 10px 61px 9px rgba(250, 0, 0, 0.51);
-  -webkit-box-shadow: -9px 10px 61px 9px rgba(250, 0, 0, 0.51);
-  -moz-box-shadow: -9px 10px 61px 9px rgba(250, 0, 0, 0.51);
+  border-bottom: 5px solid #22223b;
+  box-shadow: -9px 10px 61px 9px rgba(34, 34, 59);
+  -webkit-box-shadow: -9px 10px 61px 9px rgba(34, 34, 59);
+  -moz-box-shadow: -9px 10px 61px 9px rgba(34, 34, 59);
   cursor: pointer;
 }
 
 .btn-know-more {
-
-  background-color: #1e1d1d;
+  margin-top: 70px;
+  background-color: #000000;
   font-size: 18px;
   padding: 8px 40px;
   border-radius: 10px;
@@ -229,10 +229,10 @@ button:active {
 
   filter: brightness(110%);
   color: rgb(255, 255, 255);
-  border-bottom: 5px solid red;
-  box-shadow: -9px 10px 61px 9px rgba(250, 0, 0, 0.51);
-  -webkit-box-shadow: -9px 10px 61px 9px rgba(250, 0, 0, 0.51);
-  -moz-box-shadow: -9px 10px 61px 9px rgba(250, 0, 0, 0.51);
+  border-bottom: 5px solid #003049;
+  box-shadow: -9px 10px 61px 9px #003049;
+  -webkit-box-shadow: -9px 10px 61px 9px #003049;
+  -moz-box-shadow: -9px 10px 61px 9px #003049;
   cursor: pointer;
 }
 

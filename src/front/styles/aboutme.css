@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.content {
+    margin-top: 30px;
+    max-width: 500px;
+    padding-right: 50px;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    color: #4a4e69;
+    margin: 0;
+    font-weight: bold;
+}
+
+.content h2 {
+    color: #e63946;
+}
+
+.content p {
+    color: #ffffff;
+    line-height: 1.6;
+    font-weight: 500;
+
+}
+
+.btn {
+    background-color: #001d3d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    overflow: hidden;
+    height: 350px;
+    width: 350px;
+    border: 5px solid #003049;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #fffcfc;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
