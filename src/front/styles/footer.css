@@ -78,12 +78,12 @@ body {
 
 .pie-pagina .grupo-1 .red-social a:hover {
     color: black;
-    background-color: red;
+    background-color: #003049;
     border-radius: 35px;
 }
 
 .pie-pagina .grupo-2 {
-    background-color: #74000a;
+    background-color: #003049;
     padding: 15px 10px;
     text-align: center;
     color: #ffffff;

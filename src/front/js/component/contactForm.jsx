@@ -27,16 +27,27 @@ export const ContactForm = () => {
         return errors;
     };
 
+    function resetForm() {
+        let nombre = document.getElementById("name");
+        let email = document.getElementById("mail");
+        let message = document.getElementById("message");
+        nombre.value = "";
+        email.value = "";
+        message.value = "";
+
+    }
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         const validation = validateErrors();
         if (Object.keys(validation).length === 0) {
             await actions.getInTouch(gmessage.name, gmessage.email, gmessage.message);
-            setGmessage("");
+            resetForm();
             toast.success("Message sent successfully! 🎉")
         } else {
             setErrors(validation);
             toast.error("Error sending message! 🙅🏾‍♂️")
+
         }
 
     }
@@ -53,6 +64,7 @@ export const ContactForm = () => {
                         placeholder="Name"
                         type="text"
                         className="input"
+                        id="name"
                         onChange={(e) => { setGmessage({ ...gmessage, name: e.target.value }) }}
                     />
                     <input
@@ -74,7 +86,7 @@ export const ContactForm = () => {
                     <div className="button-container">
                         <button className="send-button" onClick={handleSubmit}>Send</button>
                         <div className="reset-button-container">
-                            <div id="reset-btn" className="reset-button">Reset</div>
+                            <div id="reset-btn" className="reset-button" onClick={resetForm}>Reset</div>
                         </div>
                     </div>
                 </div>

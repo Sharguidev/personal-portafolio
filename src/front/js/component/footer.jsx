@@ -19,7 +19,7 @@ export function Footer() {
 					<div className="box mt-5">
 						<h2 className="text-center">About Me</h2>
 						<span>
-							I'm a Catholic guy, passionated for Technology music and the most important the Mass</span>
+							I'm a Catholic guy, passionated for Technology music and the most important the Mass, I'm a Developer that can be a Project Manager or UX/UI</span>
 					</div>
 					<div className="box mt-5 text-center">
 						<h2 >Follow Me</h2>

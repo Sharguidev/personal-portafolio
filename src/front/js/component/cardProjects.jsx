@@ -23,13 +23,8 @@ export default function CardProjects() {
                 })}
 
             </div>
-
-
-
         </div>
-
     );
-
 };
 
 
@@ -40,7 +35,7 @@ const ProjectsItems = ({ project }) => {
         <div className="card" style={{ width: "18rem" }}>
 
             <div className="card-body">
-                <h5 className="card-title">{project.title}</h5>
+                <h5 className="card-title ">{project.title}</h5>
                 <p className="card-text mb-5">{project.description}</p>
                 <a href="#" className="btn-know-more mt-3">See More</a>
             </div>

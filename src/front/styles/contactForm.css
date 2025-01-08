@@ -3,12 +3,17 @@
     color: #ff0101;
 }
 
+#contact-me h1 {
+    color: #4a4e69;
+    font-weight: bold;
+}
+
 .form-container {
     max-width: 700px;
     margin: 30px;
     background-color: #000000;
     padding: 30px;
-    border-left: 5px solid #f00000;
+    border-left: 5px solid #003049;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
 }
 
@@ -24,7 +29,7 @@
     color: #ffffff;
     width: 100%;
     background-color: #000304;
-    border: 1px red solid;
+    border: 1px #003049 solid;
     outline: none;
     padding: 10px;
     margin-bottom: 20px;
@@ -34,7 +39,7 @@
 }
 
 .form-container .form .input:focus {
-    border-left: 5px solid #ff0101;
+    border-left: 5px solid #003049;
 }
 
 .form-container .form .textarea {
@@ -43,8 +48,8 @@
     border: none;
     outline: none;
     background-color: #000304;
-    border: 1px red solid;
-    color: #f60505;
+    border: 1px #003049 solid;
+    color: #3554eede;
     font-weight: bold;
     resize: none;
     max-height: 150px;
@@ -54,7 +59,7 @@
 }
 
 .form-container .form .textarea:focus {
-    border-left: 5px solid #ff0101;
+    border-left: 5px solid #003049;
 }
 
 .form-container .form .button-container {
@@ -64,7 +69,7 @@
 
 .form-container .form .button-container .send-button {
     flex-basis: 70%;
-    background: #c60000;
+    background: #003049;
     padding: 10px;
     color: #000000;
     text-align: center;
@@ -76,12 +81,12 @@
 
 .form-container .form .button-container .send-button:hover {
     background: transparent;
-    border: 1px solid #ff0101;
-    color: #f00606;
+    border: 1px solid #003049;
+    color: #3554eede;
 }
 
 .form-container .form .button-container .reset-button-container {
-    filter: drop-shadow(1px 1px 0px #c60000);
+    filter: drop-shadow(1px 1px 0px #003049);
     flex-basis: 30%;
 }
 
@@ -89,7 +94,7 @@
     position: relative;
     text-align: center;
     padding: 10px;
-    color: #c60000;
+    color: #3554eede;
     font-weight: bold;
     background: #000000;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
@@ -98,6 +103,6 @@
 }
 
 .form-container .form .button-container .reset-button-container .reset-button:hover {
-    background: #c60000;
+    background: #003049;
     color: #000;
 }

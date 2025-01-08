@@ -35,9 +35,43 @@ export const Skills = () => {
                             <span>{skill.name}</span>
                         </a>
                     ))}
+
+                </div>
+                <h1 className="mt-5 text-white" style={{ fontSize: "40px", fontWeight: "700" }}> UI/UX</h1>
+                <div className="skills-grid">
+                    {[
+                        { icon: "fa-figma", name: "Figma" },
+                        { icon: "fa-a", name: "Adobe Express" },
+                        { icon: "fa-c", name: "Canva" },
+                        { icon: "fa-l", name: "Lunacy" },
+
+                    ].map(skill => (
+                        <a className="codepen-button " key={skill.name}>
+                            <span><i className={`fa-brands ${skill.icon}`}></i></span><br />
+                            <span>{skill.name}</span>
+                        </a>
+                    ))}
+                </div>
+
+                <h1 className="mt-5 text-white" style={{ fontSize: "40px", fontWeight: "700" }}>Code Editors</h1>
+                <div className="skills-grid">
+                    {[
+                        { icon: "fa-s", name: "Sublime Text" },
+                        { icon: "fa-a", name: "Visual Studio Code" },
+                        { icon: "fa-w", name: "Windsurf" },
+
+
+                    ].map(skill => (
+                        <a className="codepen-button " key={skill.name}>
+                            <span><i className={`fa-brands ${skill.icon}`}></i></span><br />
+                            <span>{skill.name}</span>
+                        </a>
+                    ))}
+
                 </div>
 
             </div>
+
         </div>
     );
 };
