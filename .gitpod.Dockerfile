@@ -18,6 +18,8 @@ RUN curl https://pyenv.run | bash
 RUN pyenv update && pyenv install 3.10.7 && pyenv global 3.10.7
 RUN pip install pipenv yapf
 RUN npm i heroku -g
+RUN pip install --upgrade pip setuptools wheel
+RUN pip install -r requirements.txt
 
 # remove PIP_USER environment
 USER gitpod
