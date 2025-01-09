@@ -32,7 +32,7 @@ const Login = () => {
 
     return (
         <div className="container-login mx-auto mb-5 mt-5">
-            <h1 className="text-center my-4">Let's Rock</h1>
+            <h1 className="text-center my-4">Let's Rockit</h1>
             <div className="form-floating mb-3">
                 <input
                     type="email"
