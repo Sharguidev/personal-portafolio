@@ -23,24 +23,39 @@ const getState = ({ getStore, getActions, setStore }) => {
 			projects: [
 				{
 					id: 1,
+					year: "2024",
 					title: "Roomies",
-					description: "This was the final project developed in collaboration with other classmates in 4geeksAcademy."
-
+					description: "This was the final project developed in collaboration with other classmates in 4geeksAcademy.",
+					githubLink: "https://github.com/Sharguidev/Coliving-Final-Project",
+					liveLink: "",
+					builtWith: "React Js, Bootstrap, CSS, Python, Flask, JWT,  SQLAlchemy"
 				},
 				{
 					id: 2,
+					year: "2024",
 					title: "Star Wars API",
-					description: "This was made with Python and Flask API, it should be capable of insert, delete or update data in the database."
+					description: "This was made with Python and Flask API, it should be capable of insert, delete or update data in the database.",
+					githubLink: "https://github.com/Sharguidev/StarWars-API-Sharguidev",
+					liveLink: "",
+					builtWith: " Python, Flask, JWT,  SQLAlchemy"
 				},
 				{
 					id: 3,
+					year: "2024",
 					title: "Authentication System",
-					description: "This is a Login System  JWT token. Capable to start a new session and logout."
+					description: "This is a Login System  JWT token. Capable to start a new session and logout.",
+					githubLink: "https://github.com/Sharguidev/Authentication-System-Sharguidev",
+					liveLink: "",
+					builtWith: "React Js, Bootstrap, CSS, Python, Flask,  SQLAlchemy"
 				},
 				{
 					id: 4,
+					year: "2024",
 					title: "Landing Page with React Js",
-					description: "This was made with React JS, Bootstrap and CSS. simple project to practice React"
+					description: "This was made with React JS, Bootstrap and CSS. simple project to practice React",
+					githubLink: "https://github.com/Sharguidev/landing-page-with-React-Sharguidev",
+					liveLink: "",
+					builtWith: "React Js, Bootstrap, CSS"
 				}
 
 

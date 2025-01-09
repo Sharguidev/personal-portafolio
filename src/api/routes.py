@@ -85,9 +85,9 @@ def getintouch():
 
        #Config send email
 
-       sender_email = employer.email
+       sender_email = "gestiones.sharguidev@gmail.com"
+       sender_password = "mquybgsvcngqsrvw"
        receiver_email = "guillermoj.obando@gmail.com"
-       receiver_password = "vnxkuunjchvhealc"
 
        subject = f"Nuevo Mensaje de {body['name']}"
        message_content = f"""
@@ -108,7 +108,7 @@ def getintouch():
 
         server = smtplib.SMTP("smtp.gmail.com", 587)
         server.starttls()
-        server.login(receiver_email, receiver_password)
+        server.login(sender_email, sender_password)
         server.sendmail(sender_email, receiver_email, msg.as_string())
         server.quit()
 

@@ -38,3 +38,6 @@ class GetInTouch(db.Model):
             "email": self.email,
             "message": self.message
         }
+    
+
+

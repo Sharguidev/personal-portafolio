@@ -1,23 +1,51 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useContext } from "react";
+
+import { Context } from "../store/appContext";
+
 // import "./../../styles/projects.css";
 
 
 const Projects = () => {
-    return (
-        <div className="text-center mt-5">
-            <div className="justify-content-center" style={{ marginTop: "150px" }}>
-                <p>My Projects</p>
-                <h1>My Web developed projects</h1> <br />
-                <p>You can see my projects here, click in Know More! to get more information about each project</p>
-            </div>
-            <div className="d-flex justify-content-center card-projects" >
 
-            </div>
-            <div>
-                <Link to="/" className="see-more">Go Back</Link>
-            </div>
+    const { store } = useContext(Context);
+
+    return (
+        <div className="mx-auto">
+
+            <table className="table table-dark text-center">
+                <thead>
+                    <tr >
+                        <th scope="col">Year</th>
+                        <th scope="col">Project</th>
+                        <th scope="col">Built With</th>
+                        <th scope="col">Live Link</th>
+                        <th scope="col">Github Link</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    {store.projects.map((project, index) => {
+                        return (
+                            <ProjectInfo key={index} project={project} />
+                        );
+                    })}
+
+
+                </tbody>
+            </table >
         </div>
+    );
+};
+
+const ProjectInfo = ({ project }) => {
+    return (
+        <tr>
+            <th scope="row">{project.year}</th>
+            <td>{project.title}</td>
+            <td>{project.builtWith}</td>
+            <td><a href={project.githubLink} target="_blank" className="text-decoration-none text-white">{project.title}</a></td>
+            <td><a href="#" target="_blank" className="text-decoration-none text-white">Coming soon</a> </td>
+        </tr>
     );
 };
 
