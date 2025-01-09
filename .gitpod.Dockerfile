@@ -14,6 +14,8 @@ RUN rm .pyenv -Rf
 RUN rm .gp_pyenv.d -Rf
 RUN curl https://pyenv.run | bash
 
+RUN apt-get update && apt-get install -y build-essential libyaml-dev
+
 
 RUN pyenv update && pyenv install 3.10.7 && pyenv global 3.10.7
 RUN pip install pipenv yapf
