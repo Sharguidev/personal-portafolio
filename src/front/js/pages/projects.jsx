@@ -18,8 +18,8 @@ const Projects = () => {
                         <th scope="col">Year</th>
                         <th scope="col">Project</th>
                         <th scope="col">Built With</th>
-                        <th scope="col">Live Link</th>
                         <th scope="col">Github Link</th>
+                        <th scope="col">Live Link</th>
                     </tr>
 
                 </thead>
