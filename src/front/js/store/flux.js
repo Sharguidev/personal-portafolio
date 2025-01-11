@@ -28,7 +28,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 					description: "This was the final project developed in collaboration with other classmates in 4geeksAcademy.",
 					githubLink: "https://github.com/Sharguidev/Coliving-Final-Project",
 					liveLink: "",
-					builtWith: "React Js, Bootstrap, CSS, Python, Flask, JWT,  SQLAlchemy"
+					builtWith: "React Js, Bootstrap, CSS, Python, Flask, JWT,  SQLAlchemy",
+					descript: "This project is a Universitary Coliving to ensure that any student can find a room to live in a safe, secure environment and cheaper."
 				},
 				{
 					id: 2,
@@ -37,7 +38,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					description: "This was made with Python and Flask API, it should be capable of insert, delete or update data in the database.",
 					githubLink: "https://github.com/Sharguidev/StarWars-API-Sharguidev",
 					liveLink: "",
-					builtWith: " Python, Flask, JWT,  SQLAlchemy"
+					builtWith: " Python, Flask, JWT,  SQLAlchemy",
+					descript: "This API is capable of getting all the favorites from the fans of Starwars"
+
 				},
 				{
 					id: 3,
@@ -46,7 +49,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 					description: "This is a Login System  JWT token. Capable to start a new session and logout.",
 					githubLink: "https://github.com/Sharguidev/Authentication-System-Sharguidev",
 					liveLink: "",
-					builtWith: "React Js, Bootstrap, CSS, Python, Flask,  SQLAlchemy"
+					builtWith: "React Js, Bootstrap, CSS, Python, Flask,  SQLAlchemy",
+					descript: "This is a Login System  JWT token. Capable to start a new session and logout."
 				},
 				{
 					id: 4,
@@ -55,7 +59,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 					description: "This was made with React JS, Bootstrap and CSS. simple project to practice React",
 					githubLink: "https://github.com/Sharguidev/landing-page-with-React-Sharguidev",
 					liveLink: "",
-					builtWith: "React Js, Bootstrap, CSS"
+					builtWith: "React Js, Bootstrap, CSS",
+					descript: "This was made with React JS, Bootstrap and CSS. simple project to practice React"
 				}
 
 

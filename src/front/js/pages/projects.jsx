@@ -20,6 +20,7 @@ const Projects = () => {
                         <th scope="col">Built With</th>
                         <th scope="col">Github Link</th>
                         <th scope="col">Live Link</th>
+                        <th scope="col">Description</th>
                     </tr>
 
                 </thead>
@@ -45,6 +46,7 @@ const ProjectInfo = ({ project }) => {
             <td>{project.builtWith}</td>
             <td><a href={project.githubLink} target="_blank" className="text-decoration-none text-white">{project.title}</a></td>
             <td><a href="#" target="_blank" className="text-decoration-none text-white">Coming soon</a> </td>
+            <td>{project.descript}</td>
         </tr>
     );
 };
